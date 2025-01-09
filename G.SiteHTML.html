@@ -4,37 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G-shop</title>
-    <link rel="stylesheet" href="WebdesignCss.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-        }
-        .description {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="WebDesignCss.css">
 </head>
 <body>
     <header>
@@ -44,11 +14,18 @@
         <p id="greeting" class="description">Best Items for you G</p>
         <input type="text" id="search-input" placeholder="Search for products...">
         <button id="search-button">Search</button>
-        <!-- Add your content here -->
+        
+        <div class="product-card">
+            <p class="bestselling">Bestselling Products of the Week : </p>
+            <img src="C:\Users\hadda\Desktop\GSite\Mirror1.png" alt="Mirror">
+            <h2>Elegant Mirror</h2>
+            <p>Price: 5€</p>
+            <button onclick="window.location.href='OrderSite.html'">Order</button>
+        </div>
     </div>
     <footer>
-        <p>&copy; 2025 G-shop.</p>
+        <p>&copy; 2025 G-shop..</p>
     </footer>
-    <script src="Functions.js"></script>
+    <script src="Functionsv2.js"></script>
 </body>
 </html>

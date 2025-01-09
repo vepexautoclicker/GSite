@@ -34,3 +34,28 @@ document.getElementById('search-button').addEventListener('click', searchProduct
 window.onload = displayGreeting;
 
 let currentSlide = 0;
+const slides = document.getElementsByClassName('carousel-image');
+
+function showSlide(index) {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+    }
+    slides[index].classList.add('active');
+}
+
+function changeSlide(direction) {
+    currentSlide += direction;
+    if (currentSlide >= slides.length) {
+        currentSlide = 0;
+    } else if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+    }
+    showSlide(currentSlide);
+}
+
+document.getElementById('checkout-button').addEventListener('click', function() {
+    alert('Checkout functionality will be added soon!');
+});
+
+// Initialize the carousel
+showSlide(currentSlide);
